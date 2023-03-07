@@ -55,13 +55,11 @@ int main(){
             }
         }
     }
-    if(solve(0,0)){
-        cout << "Solved!" << '\n';
-    }
-    else{
+    if(solve(0,0) == 0){
         cout << "Unsolvable" << '\n';
         return 0;
     }
+    cout << "Solved!" << '\n';
     for(int i = 0;i<9;i++){
         for(int j = 0;j<9;j++){
             cout << sudoku[i][j] << ' ';
